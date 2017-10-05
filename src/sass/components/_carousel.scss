@@ -1,0 +1,70 @@
+.carousel {
+  min-height: 500px;
+}
+
+.carousel-indicators {
+  position: relative;
+  display: block;
+  margin-left: 30px;
+  margin-right: 0;
+  li {
+    display: block;
+    width: 21px;
+    height: 23px;
+    background-image: url(../images/hex.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    margin-bottom: 15px;
+    background-size: contain;
+    &.active {
+      background-color: transparent;
+      background-image: url(../images/hex-active.png);
+    }
+  }
+}
+
+.carousel-vertical {
+  .carousel-item-next.carousel-item-left,
+  .carousel-item-prev.carousel-item-right {
+    transform: translateX(0);
+    transform: translateY(0);
+
+    @supports (transform-style: preserve-3d) {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .carousel-item-next,
+  .active.carousel-item-right {
+    transform: translateX(0);
+    transform: translatey(100%);
+
+    @supports (transform-style: preserve-3d) {
+      transform: translate3d(0, 100%, 0);
+    }
+  }
+
+  .carousel-item-prev,
+  .active.carousel-item-left {
+    transform: translateX(0);
+    transform: translateY(-100%);
+
+    @supports (transform-style: preserve-3d) {
+      transform: translate3d(0, -100%, 0);
+    }
+  }
+}
+
+.transition-timer-wrapper {
+  background: #707070;
+}
+
+.transition-timer-carousel-progress-bar {
+  height: 3px;
+  background-color: $purple-light;
+  width: 0%;
+  margin: 0px 0px 0px 0px;
+  border: none;
+  z-index: 11;
+  position: relative;
+}

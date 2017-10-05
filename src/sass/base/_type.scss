@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'NationalBoldItalic';
+  src: url('../fonts/NationalWeb-BoldItalic.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/NationalWeb-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/NationalWeb-BoldItalic.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/NationalWeb-BoldItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/NationalWeb-BoldItalic.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'NationalBookItalic';
+  src: url('../fonts/NationalWeb-BookItalic.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/NationalWeb-BookItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/NationalWeb-BookItalic.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/NationalWeb-BookItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/NationalWeb-BookItalic.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+.text-xs {
+  font-size: $text-xs;
+}
+
+.text-sm {
+  font-size: $text-sm;
+}
+
+.text-base {
+  font-size: $font-size-base;
+}
+
+.text-md {
+  font-size: $text-md;
+}
+
+.text-lg {
+  font-size: $text-lg;
+}
+
+.text-xl {
+  font-size: $text-xl;
+}
+
+
+
+

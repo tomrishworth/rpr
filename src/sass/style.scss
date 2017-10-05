@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+
+@import "variable-overrides";
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+@import "./node_modules/fullpage.js/dist/jquery.fullpage";
+
+@import "custom-variables";
+
+@import "base/**/*.scss";
+@import "components/**/*.scss";
+
+@import "utilities";
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+}
+
+.intro {
+  height: 100vh;
+  background: $purple;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .intro-btn {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+  }
+}
+
+.section-about {
+  position: relative;
+  overflow: hidden;
+}
+
+.prism {
+  position: absolute;
+  top: -200px;
+  right: -300px;
+}

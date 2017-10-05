@@ -1,0 +1,30 @@
+{
+  "name": "simple-static",
+  "version": "0.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "author": "Tom Rishworth",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "browser-sync": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-concat": "*",
+    "gulp-notify": "*",
+    "gulp-plumber": "*",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "*",
+    "gulp-sass-glob": "*",
+    "gulp-sourcemaps": "*"
+  },
+  "dependencies": {
+    "bodymovin": "^4.11.1",
+    "bootstrap": "4.0.0-beta",
+    "gulp-uglify": "^3.0.0",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.5",
+    "skrollr": "^0.6.26",
+    "smooth-scroll": "^12.1.5",
+    "waypoints": "^4.0.1"
+  }
+}
