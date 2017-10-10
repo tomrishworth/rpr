@@ -4,3 +4,12 @@
     color: #fff;
   }
 }
+
+.btn-secondary {
+  background: transparent;
+  color: $purple-light;
+  border-color: $purple-light;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 3px;
+}

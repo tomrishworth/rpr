@@ -22,6 +22,7 @@ var jsPaths = [
     "./node_modules/waypoints/lib/shortcuts/sticky.js",
     "./node_modules/skrollr/dist/skrollr.min.js",
     "./node_modules/smooth-scroll/dist/js/smooth-scroll.js",
+    "src/js/modernizr-custom.js",
     "src/js/app.js",
 ];
 

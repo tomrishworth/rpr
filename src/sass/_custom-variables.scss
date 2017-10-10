@@ -2,7 +2,7 @@ $bg-light: #F3F3F5;
 $bg-dark: $gray-900;
 $text-dark: $gray-800;
 $gray-light: $gray-600;
-$text-subtle: $gray-600;
+$text-subtle: #D0D0CE;
 $border-light: $gray-500;
 
 
@@ -14,8 +14,10 @@ $spacer-4: map-get($spacers, 4 );
 $spacer-5: map-get($spacers, 5 );
 
 // Font sizing
-$text-xs: 12px;
-$text-sm: 14px;
-$text-md: 18px;
-$text-lg: 24px;
-$text-xl: 50px;
+$text-xs: 14px;
+$text-sm: 16px;
+$text-md: 22px;
+$text-lg: 26px;
+$text-xl: 60px;
+
+$font-family-bold: 'NationalMedium';

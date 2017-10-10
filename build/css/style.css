@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
 /*!
  * Bootstrap v4.0.0-beta (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
@@ -71,7 +70,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 body {
   margin: 0;
-  font-family: "Open Sans";
+  font-family: "NationalBook";
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
@@ -3898,7 +3897,7 @@ button.close {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Open Sans";
+  font-family: "NationalBook";
   font-style: normal;
   font-weight: normal;
   line-height: 1.5;
@@ -3980,7 +3979,7 @@ button.close {
   display: block;
   max-width: 276px;
   padding: 1px;
-  font-family: "Open Sans";
+  font-family: "NationalBook";
   font-style: normal;
   font-weight: normal;
   line-height: 1.5;
@@ -6628,44 +6627,85 @@ html.fp-enabled,
   .btn-white:hover {
     color: #fff; }
 
+.btn-secondary {
+  background: transparent;
+  color: #9F4584;
+  border-color: #9F4584;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 3px; }
+
 .form-control {
   border-radius: 0;
   border-top: none;
   border-left: none;
   border-right: none;
-  padding-left: 0; }
+  border-bottom: 2px solid #DADADA;
+  padding-left: 0;
+  font-size: 22px;
+  font-family: "NationalMedium"; }
+  .form-control::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #54314E; }
+  .form-control::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #54314E; }
+  .form-control:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #54314E; }
+  .form-control:-moz-placeholder {
+    /* Firefox 18- */
+    color: #54314E; }
 
 @font-face {
-  font-family: 'NationalBoldItalic';
-  src: url("../fonts/NationalWeb-BoldItalic.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/NationalWeb-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/NationalWeb-BoldItalic.woff") format("woff"), url("../fonts/NationalWeb-BoldItalic.ttf") format("truetype"), url("../fonts/NationalWeb-BoldItalic.svg#svgFontName") format("svg");
-  /* Legacy iOS */ }
+  font-family: 'NationalBook';
+  src: url("../fonts/NationalWeb-Book.eot");
+  src: url("../fonts/NationalWeb-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/NationalWeb-Book.woff") format("woff"), url("../fonts/NationalWeb-Book.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
 
 @font-face {
-  font-family: 'NationalBookItalic';
-  src: url("../fonts/NationalWeb-BookItalic.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/NationalWeb-BookItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/NationalWeb-BookItalic.woff") format("woff"), url("../fonts/NationalWeb-BookItalic.ttf") format("truetype"), url("../fonts/NationalWeb-BookItalic.svg#svgFontName") format("svg");
-  /* Legacy iOS */ }
+  font-family: 'NationalLight';
+  src: url("../fonts/NationalWeb-Light.eot");
+  src: url("../fonts/NationalWeb-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/NationalWeb-Light.woff") format("woff"), url("../fonts/NationalWeb-Light.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'NationalMedium';
+  src: url("../fonts/NationalWeb-Medium.eot");
+  src: url("../fonts/NationalWeb-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/NationalWeb-Medium.woff") format("woff"), url("../fonts/NationalWeb-Medium.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+.font-weight-bold,
+strong {
+  font-weight: normal;
+  font-family: 'NationalMedium'; }
+
+.font-weight-light {
+  font-weight: normal;
+  font-family: 'NationalLight'; }
 
 .text-xs {
-  font-size: 12px; }
+  font-size: 14px; }
 
 .text-sm {
-  font-size: 14px; }
+  font-size: 16px;
+  line-height: 1.3; }
 
 .text-base {
   font-size: 1rem; }
 
 .text-md {
-  font-size: 18px; }
+  font-size: 22px; }
 
 .text-lg {
-  font-size: 24px; }
+  font-size: 26px;
+  line-height: 1.2; }
 
 .text-xl {
-  font-size: 50px; }
+  font-size: 60px; }
 
 .carousel {
   min-height: 500px; }
@@ -6737,13 +6777,16 @@ html.fp-enabled,
   position: relative; }
 
 .header {
-  height: 100px;
   left: 0;
   right: 0;
   -webkit-transition: top 0.2s ease-in-out;
   transition: top 0.2s ease-in-out;
   background: #fff;
+  border-bottom: 1px solid #f6f6f6;
   z-index: 100; }
+  @media (min-width: 576px) {
+    .header {
+      height: 100px; } }
   .header.stuck {
     position: fixed;
     top: 0; }
@@ -6757,7 +6800,8 @@ html.fp-enabled,
   padding-right: 0;
   padding-bottom: 5px;
   margin-left: 15px;
-  margin-right: 15px; }
+  margin-right: 15px;
+  font-family: "NationalMedium"; }
   .nav-link.active {
     border-color: #DADADA; }
 
@@ -6814,7 +6858,7 @@ html.fp-enabled,
   padding-bottom: 100px; }
 
 .section-dark {
-  background-color: #4D324E;
+  background-color: #4C304D;
   background-image: url(../images/purple-bg.png);
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -6861,7 +6905,7 @@ html.fp-enabled,
   color: #868e96; }
 
 .text-subtle {
-  color: #868e96; }
+  color: #D0D0CE; }
 
 .border {
   border: 1px solid #adb5bd; }
@@ -6895,8 +6939,8 @@ html.fp-enabled,
 
 .line-purple {
   background: #54314E;
-  width: 50px;
-  height: 2px; }
+  width: 60px;
+  height: 3px; }
 
 .line-align {
   margin-top: 12px; }
@@ -6908,12 +6952,14 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  position: relative; }
+  position: relative;
+  font-size: 18px;
+  line-height: 1.4; }
 
 .intro {
-  height: 100vh;
-  background: #54314E;
+  background: #4C2F4D;
   position: relative;
+  height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6924,6 +6970,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  @media (min-width: 576px) {
+    .intro {
+      height: 100vh; } }
   .intro .intro-btn {
     position: absolute;
     bottom: 50px;
