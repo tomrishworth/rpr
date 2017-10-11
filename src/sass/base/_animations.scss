@@ -1,0 +1,45 @@
+@keyframes bounceSlow {
+  0%, 20%, 50%, 80%, 90%, 92%, 95%, 98%, 100% {
+    transform: none;
+  }
+  94% {
+    transform: translate3D(0, -2px, 0);
+  }
+  96% {
+    transform: translate3D(0, 2px, 0);
+  }
+}
+
+
+.animate-bounce {
+  animation: bounceSlow 4000ms $ease infinite;
+  animation-fill-mode: both, forwards, none;
+}
+
+
+
+
+.wow {
+  visibility: hidden;
+}
+
+@keyframes fadeUp {
+  from {
+    transform: translate3d(0, 35px, 0);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.animated {
+  animation: fadeUp 2000ms ease;
+}
+
+
+.delay {
+  animation-delay: 2000ms;
+}
+

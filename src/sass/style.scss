@@ -1,7 +1,6 @@
 @import "variable-overrides";
 
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
-@import "./node_modules/fullpage.js/dist/jquery.fullpage";
 
 @import "custom-variables";
 
@@ -39,6 +38,32 @@ body {
 .section-about {
   position: relative;
   overflow: hidden;
+}
+
+.arrow-white {
+  color: #fff;
+  path {
+    stroke:#fff;
+  }
+  &:hover {
+    color: $purple-light;
+    text-decoration: none;
+    path {
+      stroke: $purple-light;
+    }
+  }
+}
+
+.arrow-purple {
+  path {
+    stroke: $purple;
+  }
+  &:hover {
+    text-decoration: none;
+    path {
+      stroke: $purple-light;
+    }
+  }
 }
 
 .prism {

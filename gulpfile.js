@@ -22,6 +22,7 @@ var jsPaths = [
     "./node_modules/waypoints/lib/shortcuts/sticky.js",
     "./node_modules/skrollr/dist/skrollr.min.js",
     "./node_modules/smooth-scroll/dist/js/smooth-scroll.js",
+    "./node_modules/wowjs/dist/wow.js",
     "src/js/modernizr-custom.js",
     "src/js/app.js",
 ];
@@ -67,7 +68,7 @@ gulp.task('browser-sync', ['sass'],  function(){
 // Watch for file changes
 gulp.task('watch', function() {
   gulp.watch('src/sass/**/*.scss', ['sass']);
-  gulp.watch('src/js/**/*.js', ['scripts']);
+  gulp.watch('src/js/**/*.js', ['scripts', 'compress']);
 });
 
 // Build the "build" folder by running all of the above tasks
