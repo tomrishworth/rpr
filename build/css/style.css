@@ -6689,8 +6689,12 @@ strong {
             transform: translateY(-3px) rotate(45deg); }
 
 .section {
-  padding-top: 100px;
-  padding-bottom: 100px; }
+  padding-top: 50px;
+  padding-bottom: 50px; }
+  @media (min-width: 576px) {
+    .section {
+      padding-top: 100px;
+      padding-bottom: 100px; } }
 
 .section-dark {
   background-color: #4C304D;
@@ -6826,6 +6830,9 @@ body {
     text-decoration: none; }
     .arrow-white:hover path {
       stroke: #9F4584; }
+
+.list-tick {
+  width: 35px; }
 
 .arrow-purple path {
   stroke: #54314E; }
