@@ -12,6 +12,10 @@
 .carousel-content {
   font-size: 30px;
   line-height: 34px;
+  @include media-breakpoint-down(sm) {
+    min-height: 210px;
+    padding-left: 15px;
+  }
 }
 
 .carousel-indicators {
