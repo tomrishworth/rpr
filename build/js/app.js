@@ -19912,40 +19912,42 @@ $(document).ready(function () {
 
   // Animated Carousel Progress Bar
 
-  var percent = 0, bar = $('.transition-timer-carousel-progress-bar'), crsl = $('#carouselHowItWorks');
-  crsl.carousel({
-    pause: true,
-    interval: 5000
-  })
+  // var percent = 0, bar = $('.transition-timer-carousel-progress-bar'), crsl = $('#carouselHowItWorks');
+  // crsl.carousel({
+  //   pause: true,
+  //   interval: 5000
+  // })
 
-  function progressBarCarousel() {
-    bar.css({ width: percent + '%' });
-    percent = percent + 0.5;
-    if (percent > 100) {
-      percent = 0;
-      crsl.carousel('next');
-    }
-  }
-  crsl.carousel({
-    interval: false,
-    pause: true
-  }).on('slid.bs.carousel', function () { });
-  var barInterval = setInterval(progressBarCarousel, 20);
-  crsl.hover(
-    function () {
-      clearInterval(barInterval);
-    },
-    function () {
-      barInterval = setInterval(progressBarCarousel, 20);
-  })
+  // function progressBarCarousel() {
+  //   bar.css({ width: percent + '%' });
+  //   percent = percent + 0.5;
+  //   if (percent > 100) {
+  //     percent = 0;
+  //     crsl.carousel('next');
+  //   }
+  // }
+  // crsl.carousel({
+  //   interval: false,
+  //   pause: true
+  // }).on('slid.bs.carousel', function () { });
+  // var barInterval = setInterval(progressBarCarousel, 20);
+  // crsl.hover(
+  //   function () {
+  //     clearInterval(barInterval);
+  //   },
+  //   function () {
+  //     barInterval = setInterval(progressBarCarousel, 20);
+  // })
+
+  var crsl = $('#carouselHowItWorks');
 
   function startCarousel() {
-      console.log('Carousel started');
-      crsl.carousel({
-        pause: false,
-        interval: 4000
-      })
-    }
+    console.log('Carousel started');
+    crsl.carousel({
+      pause: false,
+      interval: 4000
+    })
+  }
 
 
 });

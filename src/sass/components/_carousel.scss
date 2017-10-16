@@ -2,15 +2,34 @@
   min-height: 500px;
 }
 
+.carousel-number {
+  font-size: 80px;
+  position: relative;
+  line-height: 40px;
+  font-family: $font-family-light;
+}
+
+.carousel-content {
+  font-size: 30px;
+  line-height: 34px;
+}
+
 .carousel-indicators {
   position: relative;
   display: block;
-  margin-left: 30px;
-  margin-right: 0;
+  margin-left: auto;
+  margin-right: 30px;
+  margin-bottom: 0;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  display: flex;
   li {
     display: block;
     width: 21px;
     height: 23px;
+    margin-left: 10px;
+    margin-right: 10px;
     background-image: url(../images/hex.png);
     background-repeat: no-repeat;
     background-color: transparent;
@@ -67,4 +86,42 @@
   border: none;
   z-index: 11;
   position: relative;
+}
+
+.carousel-control-prev,
+.carousel-control-next  {
+  position: static;
+  width: auto;
+  left: auto;
+  top: auto;
+  bottom: auto;
+  opacity: 1;
+}
+
+.carousel-controls {
+  display: flex;
+  position: relative;
+  top: -6px;
+  button {
+    background: transparent;
+    border: none;
+    &:hover {
+      cursor: pointer;
+      svg path{
+        stroke: $purple-light;
+      }
+    }
+  }
+}
+
+.carousel-control-prev {
+  svg {
+    transform: rotate(90deg);
+  }
+}
+
+.carousel-control-next {
+  svg {
+    transform: rotate(270deg);
+  }
 }
