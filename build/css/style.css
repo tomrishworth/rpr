@@ -6850,7 +6850,7 @@ body {
   line-height: 1.4; }
 
 .intro {
-  background: #4C2F4D;
+  background: #563758;
   position: relative;
   height: 500px;
   display: -webkit-box;
@@ -6865,7 +6865,8 @@ body {
           justify-content: center; }
   @media (min-width: 576px) {
     .intro {
-      height: 100vh; } }
+      background: #523258;
+      height: 80vh; } }
   .intro .intro-btn {
     position: absolute;
     bottom: 50px;

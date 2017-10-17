@@ -19,14 +19,15 @@ body {
 }
 
 .intro {
-  background: #4C2F4D;
+  background: #563758;
   position: relative;
   height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   @include media-breakpoint-up(sm) {
-    height: 100vh;
+    background: #523258;
+    height: 80vh;
   }
   .intro-btn {
     position: absolute;

@@ -18,7 +18,11 @@
 
 <body data-spy="scroll" data-target="#main-nav">
 	<div class="intro">
-		<div id="bm"></div>
+		<video id="animation" autoplay loop muted playinline>
+			<source src="video/animation-desktop.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<!-- <div id="bm"></div> -->
 		<a class="intro-btn animate-bounce delay arrow-white" data-scroll href="#top">
 			<svg width="52" height="29" viewBox="0 0 52 29" xmlns="http://www.w3.org/2000/svg"><path d="M2 2l24 25L50 2" stroke-width="3" stroke="#DDD" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"/></svg>
 		</a>
@@ -426,30 +430,31 @@
 		<div class="container wow">
 			<h1 class="text-xl mb-3 text-center text-purple-dark font-weight-light">Talk to us</h1>
 			<div class="line-purple mx-auto"></div>
-			<form class="contact-form mt-5">
+
+			<form id="contact-form" action="https://api.formbucket.com/f/buk_GC9jaOFsGAAnir1VA0dKOyl9" method="post" target="_blank" class="contact-form mt-5">
 
 				<div class="row">
 					<div class="col-sm-6">
 						<div class="mb-5">
 							<!-- <label class="col-3" for="firstName">First name*</label> -->
-							<input placeholder="Name*" type="name" class="form-control" id="name">
+							<input placeholder="Name*" type="text" name="name" class="form-control">
 						</div>
 						<div class="mb-5">
 							<!-- <label class="col-3" for="firstName">Email*</label> -->
-							<input placeholder="Email*" type="email" class="form-control" id="email">
+							<input placeholder="Email*" type="email" name="email" class="form-control">
 						</div>
 						<div class="mb-5">
 							<!-- <label class="col-3" for="firstName">Phone</label> -->
-							<input placeholder="Phone" type="phone" class="form-control" id="phone">
+							<input placeholder="Phone" type="text" name="phone" class="form-control">
 						</div>
 					</div>
 
 					<div class="col-sm-6">
 						<div class="mb-4">
 							<!-- <label class="col-3" for="firstName">Comment......</label> -->
-							<textarea style="height: 275px;" rows="10" placeholder="Comment..." type="comment" class="form-control" id="firstname" aria-describedby="comment"></textarea>
+							<textarea style="height: 275px;" rows="10" placeholder="Comment..." name="message" class="form-control"></textarea>
 						</div>
-
+						<input type="text" name="__bucket_trap__" value="" style="display: none" />
 						<div class="text-right">
 							<button type="submit" class="btn btn-secondary text-md font-weight-bold">Submit</button>
 						</div>
@@ -466,12 +471,7 @@
 		<div class="mb-4">
 			<img class="img-fluid" src="images/logo.png" />
 		</div>
-		<div class="text-xs text-muted mb-5">
-			<p>Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin vel ante a orci tempus eleifend ut et magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in libero. Vestibulum mollis mauris enim. Morbi euismod magna ac lorem rutrum elementum. Donec viverra auctor.
-				</p>
-			<p>Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin vel ante a orci tempus eleifend ut et magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in libero. Vestibulum mollis mauris enim. Morbi euismod magna ac lorem rutrum elementum. Donec viverra auctor.
-				</p>
-		</div>
+		<p class="mb-4"><a href="https://www.westpac.co.nz/who-we-are/about-westpac-new-zealand/westpac-legal-information/">Privacy Policy</a></p>
 
 	</footer>
 
