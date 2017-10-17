@@ -78,6 +78,10 @@
   flex: auto
 }
 
+.flex-shrink-none {
+  flex-shrink: 0;
+}
+
 .list-reset {
   margin: 0;
   padding: 0;

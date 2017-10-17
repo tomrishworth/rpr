@@ -21,18 +21,45 @@ body {
 .intro {
   background: #563758;
   position: relative;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  height: 400px;
+  padding-top: 50px;
+  text-align: center;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
   @include media-breakpoint-up(sm) {
     background: #523258;
+    height: 500px;
+  }
+  @include media-breakpoint-up(md) {
+    height: 600px;
+  }
+  @include media-breakpoint-up(lg) {
     height: 80vh;
   }
   .intro-btn {
     position: absolute;
     bottom: 50px;
     right: 50px;
+  }
+}
+
+#animation {
+  margin-left: auto;
+  margin-right: auto;
+  width: 372px;
+  height: 208px;
+  @include media-breakpoint-up(sm) {
+    width: 600px;
+    height: 337px;
+  }
+  @include media-breakpoint-up(md) {
+    width: 800px;
+    height: 450px;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 1066px;
+    height: 600px;
   }
 }
 

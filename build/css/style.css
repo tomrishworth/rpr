@@ -6559,7 +6559,7 @@ strong {
 .carousel-indicators {
   position: relative;
   display: block;
-  margin-left: auto;
+  margin-left: 0;
   margin-right: 30px;
   margin-bottom: 0;
   left: auto;
@@ -6572,13 +6572,17 @@ strong {
     display: block;
     width: 21px;
     height: 23px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 4px;
+    margin-right: 4px;
     background-image: url(../images/hex.png);
     background-repeat: no-repeat;
     background-color: transparent;
     margin-bottom: 15px;
     background-size: contain; }
+    @media (min-width: 576px) {
+      .carousel-indicators li {
+        margin-left: 10px;
+        margin-right: 10px; } }
     .carousel-indicators li.active {
       background-color: transparent;
       background-image: url(../images/hex-active.png); }
@@ -6693,6 +6697,9 @@ strong {
   font-family: "NationalMedium"; }
   .nav-link.active {
     border-color: #DADADA; }
+  @media (max-width: 575px) {
+    .nav-link {
+      display: block; } }
 
 @media (max-width: 1199px) {
   #main-nav {
@@ -6704,9 +6711,12 @@ strong {
 
 @media (max-width: 1199px) {
   #main-nav .nav {
-    display: block;
     padding-top: 30px;
     padding-bottom: 30px; } }
+
+@media (max-width: 575px) {
+  #main-nav .nav {
+    display: block; } }
 
 .navbar-toggler {
   background: none;
@@ -6820,6 +6830,10 @@ strong {
       -ms-flex: auto;
           flex: auto; }
 
+.flex-shrink-none {
+  -ms-flex-negative: 0;
+      flex-shrink: 0; }
+
 .list-reset {
   margin: 0;
   padding: 0;
@@ -6852,25 +6866,41 @@ body {
 .intro {
   background: #563758;
   position: relative;
-  height: 500px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  height: 400px;
+  padding-top: 50px;
+  text-align: center; }
   @media (min-width: 576px) {
     .intro {
       background: #523258;
+      height: 500px; } }
+  @media (min-width: 768px) {
+    .intro {
+      height: 600px; } }
+  @media (min-width: 992px) {
+    .intro {
       height: 80vh; } }
   .intro .intro-btn {
     position: absolute;
     bottom: 50px;
     right: 50px; }
+
+#animation {
+  margin-left: auto;
+  margin-right: auto;
+  width: 372px;
+  height: 208px; }
+  @media (min-width: 576px) {
+    #animation {
+      width: 600px;
+      height: 337px; } }
+  @media (min-width: 768px) {
+    #animation {
+      width: 800px;
+      height: 450px; } }
+  @media (min-width: 992px) {
+    #animation {
+      width: 1066px;
+      height: 600px; } }
 
 .section-about {
   position: relative;

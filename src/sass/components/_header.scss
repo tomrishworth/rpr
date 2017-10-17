@@ -32,6 +32,9 @@
   &.active {
     border-color: #DADADA;
   }
+  @include media-breakpoint-down(xs) {
+    display: block;
+  }
 }
 
 #main-nav {
@@ -44,9 +47,12 @@
   }
   .nav {
     @include media-breakpoint-down(lg) {
-      display: block;
+      // display: block;
       padding-top: 30px;
       padding-bottom: 30px;
+    }
+    @include media-breakpoint-down(xs) {
+      display: block;
     }
   }
 }

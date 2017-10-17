@@ -21,7 +21,8 @@
 .carousel-indicators {
   position: relative;
   display: block;
-  margin-left: auto;
+  // margin-left: auto;
+  margin-left: 0;
   margin-right: 30px;
   margin-bottom: 0;
   left: auto;
@@ -32,13 +33,17 @@
     display: block;
     width: 21px;
     height: 23px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 4px;
+    margin-right: 4px;
     background-image: url(../images/hex.png);
     background-repeat: no-repeat;
     background-color: transparent;
     margin-bottom: 15px;
     background-size: contain;
+    @include media-breakpoint-up(sm) {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
     &.active {
       background-color: transparent;
       background-image: url(../images/hex-active.png);
