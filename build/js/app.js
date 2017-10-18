@@ -5802,6 +5802,7 @@ $(document).ready(function () {
       // because you are an awesome designer.
       alert('Thanks for your message!');
       subscribeButton.prop('disabled', false);
+      subscribeForm.find(".form-control").val("");
     })
     .fail(function(response) {
       alert('Dang, something went wrong!');
