@@ -1,11 +1,17 @@
 @import "variable-overrides";
 
-@import "./node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 @import "custom-variables";
 
-@import "base/**/*.scss";
-@import "components/**/*.scss";
+@import "base/animations.scss";
+@import "base/buttons.scss";
+@import "base/forms.scss";
+@import "base/type.scss";
+
+@import "components/carousel.scss";
+@import "components/header.scss";
+@import "components/section.scss";
 
 @import "utilities";
 
