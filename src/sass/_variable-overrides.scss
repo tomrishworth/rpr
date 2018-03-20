@@ -1,11 +1,13 @@
 // Put any bootstrap variable overrides here
-
-// $font-family-sans-serif: 'NationalBookItalic';
-$font-family-sans-serif: 'NationalBook';
+$font-family-serif: 'Sumana';
+$font-family-sans-serif: 'Open Sans';
+$headings-font-family: $font-family-serif;
+$headings-font-weight: 500;
 
 // Custom colors
 
-$purple-light: #9F4584;
+$blue: #2C97DE;
+$blue-dark: #3C3B54;
 
 //
 // Color system
@@ -63,7 +65,7 @@ $colors: (
 );
 
 $theme-colors: (
-  primary: $purple,
+  primary: $blue,
   secondary: $gray-600,
   success: $green,
   info: $cyan,
@@ -73,9 +75,14 @@ $theme-colors: (
   dark: $gray-800
 );
 
-$link-color: $purple-light;
+// $font-size-base: 0.8rem;
+$link-color: $blue;
+$body-color: $gray-700;
+$headings-color: $blue-dark;
+$border-color: #eee;
 
 
+$grid-gutter-width: 60px;
 
 // Grid containers
 //

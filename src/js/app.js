@@ -21,15 +21,23 @@ $(document).ready(function () {
   });
 
   // Skrollr
-  if ($('html').hasClass('no-touchevents')) {
-    var s = skrollr.init({
-      forceHeight: false
-    })
-  }
+  // if ($('html').hasClass('no-touchevents')) {
+  //   var s = skrollr.init({
+  //     forceHeight: false
+  //   })
+  // }
 
   // Waypoints
-  var sticky = new Waypoint.Sticky({
-    element: $('.header')[0]
+  // var sticky = new Waypoint.Sticky({
+  //   element: $('.header')[0]
+  // })
+
+  var waypoints = $('#top').waypoint({
+    handler: function(direction) {
+      console.log(this.element.id + ' hit');
+      $('body').addClass('scrolled');
+    },
+    offset: '-300px'
   })
 
   // Start Carousel when it is scrolled to

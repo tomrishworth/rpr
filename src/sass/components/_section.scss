@@ -1,6 +1,7 @@
 .section {
   padding-top: 50px;
   padding-bottom: 50px;
+  background-color: #fff;
   @include media-breakpoint-up(sm) {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -9,15 +10,13 @@
 
 .section-dark {
   background-color: #4C304D;
-  background-image: url(../images/purple-bg.png);
   background-repeat: no-repeat;
   background-position: right bottom;
   color: #fff;
 }
 
 .section-grey {
-  background-color: #E7E7E8;
-  background-image: url(../images/grey-bg.png);
+  background-color: #f6f6f6;
   background-repeat: no-repeat;
   background-position: right top;
 }

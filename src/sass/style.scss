@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Sumana:400,700');
+@import url("https://use.typekit.net/zrf2yby.css");
+
 @import "variable-overrides";
 
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
@@ -15,92 +18,54 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  font-size: 18px;
+  // font-size: 18px;
   line-height: 1.4;
 }
 
 .intro {
-  background: #563758;
-  position: relative;
-  height: 400px;
-  padding-top: 50px;
-  text-align: center;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  @include media-breakpoint-up(sm) {
-    background: #523258;
-    height: 500px;
-  }
-  @include media-breakpoint-up(md) {
-    height: 600px;
-  }
-  @include media-breakpoint-up(lg) {
-    height: 80vh;
-  }
-  .intro-btn {
-    position: absolute;
-    bottom: 50px;
-    right: 50px;
-  }
+  // height: calc(100vh - 100px);
+  height: 100vh;
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+  background-position: center top;
 }
 
-#animation {
-  margin-left: auto;
-  margin-right: auto;
-  width: 372px;
-  height: 208px;
-  @include media-breakpoint-up(sm) {
-    width: 600px;
-    height: 337px;
-  }
-  @include media-breakpoint-up(md) {
-    width: 800px;
-    height: 450px;
-  }
-  @include media-breakpoint-up(lg) {
-    width: 1066px;
-    height: 600px;
-  }
+.intro2 {
+  // height: calc(100vh - 100px);
+  height: 100vh;
+  background-image: url("../images/hk-bg.jpg");
+  background-position: center top;
 }
 
-.section-about {
-  position: relative;
-  overflow: hidden;
+.intro-content {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.arrow-white {
-  color: #fff;
-  path {
-    stroke:#fff;
-  }
-  &:hover {
-    color: $purple-light;
-    text-decoration: none;
-    path {
-      stroke: $purple-light;
-    }
-  }
-}
-
-.list-tick {
-  width: 35px;
-}
-
-.arrow-purple {
-  path {
-    stroke: $purple;
-  }
-  &:hover {
-    text-decoration: none;
-    path {
-      stroke: $purple-light;
-    }
-  }
-}
-
-.prism {
+.portrait {
   position: absolute;
-  top: -200px;
-  right: -300px;
+  bottom: 0;
+  right: -150px;
 }
+
+.slant-top {
+  position: relative;
+  z-index: 1;
+  &::before {
+    content: '';
+    background: inherit;
+    display: block;
+    position: absolute;
+    height: 50%;
+    left: 0;
+    right: 0;
+    top: 0;
+    transform: skewY(-1.5deg);
+    transform-origin: 0 0;
+    z-index: -1;
+  }
+}
+
+
