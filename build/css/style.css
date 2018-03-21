@@ -6707,7 +6707,16 @@ body {
   height: 100vh;
   background-image: url("../images/bg.jpg");
   background-size: cover;
-  background-position: center top; }
+  background-position: center top;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .intro2 {
   height: 100vh;
@@ -6776,8 +6785,5 @@ body {
   .down-arrow img {
     position: relative;
     top: 3px; }
-
-.down-arrow-grey {
-  background: #eee; }
 
 /*# sourceMappingURL=style.css.map */

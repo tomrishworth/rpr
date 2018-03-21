@@ -27,6 +27,9 @@ body {
   background-image: url("../images/bg.jpg");
   background-size: cover;
   background-position: center top;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 .intro2 {
@@ -88,9 +91,3 @@ body {
   }
 }
 
-.down-arrow-grey {
-
-
-
-background: #eee;
-}
