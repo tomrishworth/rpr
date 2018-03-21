@@ -3,13 +3,17 @@
   right: 0;
   top: 0;
   // transition: top 0.2s ease-in-out;
-  // background: #fff;
+  background: rgba(255, 255, 255, 0.9);
   // position: fixed;
+  padding: 0;
   position: absolute;
   // border-bottom: 1px solid #f6f6f6;
   z-index: 100;
+  @include media-breakpoint-down(sm) {
+    padding: 15px;
+  }
   @include media-breakpoint-up(lg) {
-    height: 100px;
+    // height: 100px;
   }
   .scrolled & {
     // background: #fff;
@@ -27,18 +31,20 @@
   border-bottom: 2px solid transparent;
   padding-left: 0;
   padding-right: 0;
-  padding-bottom: 5px;
+  padding-bottom: 25px;
+  padding-top: 25px;
   margin-left: 15px;
   margin-right: 15px;
   // font-size: $text-base;
-  font-weight: bold;
-  text-transform: uppercase;
+  font-weight: 600;
+  // text-transform: uppercase;
   letter-spacing: 0.5px;
-  font-size: 15px;
+  font-size: 16px;
   // font-family: $font-family-serif;
   color: $blue-dark;
   &.active {
-    border-color: #DADADA;
+    // border-color: #DADADA;
+    border-color: $blue;
   }
   @include media-breakpoint-down(xs) {
     display: block;

@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Sumana:400,700');
-@import url("https://use.typekit.net/zrf2yby.css");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Sumana:400,700');
 
 @import "variable-overrides";
 
@@ -68,4 +67,30 @@ body {
   }
 }
 
+.down-arrow {
+  background: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #eee;
+  // box-shadow: 0 3px 18px 2px rgba(0,0,0,0.2);
+  transition: transform 300ms ease;
+  &:hover {
+    transform: scale(1.1);
+  }
+  img {
+    position: relative;
+    top: 3px;
+  }
+}
 
+.down-arrow-grey {
+
+
+
+background: #eee;
+}
