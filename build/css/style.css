@@ -6507,7 +6507,7 @@ a.text-dark:focus, a.text-dark:hover {
   line-height: 1.2; }
 
 .text-xl {
-  font-size: 40px; }
+  font-size: 50px; }
 
 .header {
   left: 0;
@@ -6652,19 +6652,19 @@ a.text-dark:focus, a.text-dark:hover {
   color: #D0D0CE; }
 
 .border {
-  border: 1px solid #ddd; }
+  border: 1px solid #eee; }
 
 .border-top {
-  border-top: 1px solid #ddd; }
+  border-top: 1px solid #eee; }
 
 .border-right {
-  border-right: 1px solid #ddd; }
+  border-right: 1px solid #eee; }
 
 .border-bottom {
-  border-bottom: 1px solid #ddd; }
+  border-bottom: 1px solid #eee; }
 
 .border-left {
-  border-left: 1px solid #ddd; }
+  border-left: 1px solid #eee; }
 
 .flex-auto {
   -webkit-box-flex: 1;
@@ -6707,16 +6707,9 @@ body {
   height: 100vh;
   background-image: url("../images/bg.jpg");
   background-size: cover;
-  background-position: center top;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  background-position: center top; }
+  .intro h2 {
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3); }
 
 .intro2 {
   height: 100vh;

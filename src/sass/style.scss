@@ -27,9 +27,12 @@ body {
   background-image: url("../images/bg.jpg");
   background-size: cover;
   background-position: center top;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  // display: flex;
+  // align-items: flex-end;
+  // justify-content: center;
+  h2 {
+    text-shadow: 1px 1px 10px rgba(0,0,0,0.3);
+  }
 }
 
 .intro2 {
