@@ -15,15 +15,7 @@ var uglify = require('gulp-uglify');
 
 var jsPaths = [
     "./node_modules/jquery/dist/jquery.min.js",
-    // "./node_modules/bodymovin/build/player/bodymovin.js",
-    "./node_modules/popper.js/dist/umd/popper.min.js",
-    "./node_modules/bootstrap/dist/js/bootstrap.js",
-    "./node_modules/waypoints/lib/jquery.waypoints.js",
-    "./node_modules/waypoints/lib/shortcuts/sticky.js",
-    "./node_modules/skrollr/dist/skrollr.min.js",
-    "./node_modules/smooth-scroll/dist/js/smooth-scroll.js",
     "./node_modules/wowjs/dist/wow.js",
-    "src/js/modernizr-custom.js",
     "src/js/app.js",
 ];
 

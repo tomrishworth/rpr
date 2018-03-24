@@ -72,7 +72,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 body {
   margin: 0;
   font-family: "Open Sans";
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: normal;
   line-height: 1.5;
   color: #495057;
@@ -407,7 +407,7 @@ mark,
 
 .blockquote {
   margin-bottom: 15px;
-  font-size: 1.25rem; }
+  font-size: 1.375rem; }
 
 .blockquote-footer {
   display: block;
@@ -489,8 +489,8 @@ pre {
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 40px;
+  padding-left: 40px;
   width: 100%; }
   @media (min-width: 576px) {
     .container {
@@ -509,8 +509,8 @@ pre {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 40px;
+  padding-left: 40px;
   width: 100%; }
 
 .row {
@@ -519,8 +519,8 @@ pre {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-right: -30px;
-  margin-left: -30px; }
+  margin-right: -40px;
+  margin-left: -40px; }
 
 .no-gutters {
   margin-right: 0;
@@ -539,8 +539,8 @@ pre {
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: 30px;
-  padding-left: 30px; }
+  padding-right: 40px;
+  padding-left: 40px; }
 
 .col {
   -ms-flex-preferred-size: 0;
@@ -1352,7 +1352,7 @@ pre {
   display: block;
   width: 100%;
   padding: 0.5rem 0.75rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.25;
   color: #495057;
   background-color: #fff;
@@ -1386,7 +1386,7 @@ pre {
     opacity: 1; }
 
 select.form-control:not([size]):not([multiple]) {
-  height: calc(2.25rem + 2px); }
+  height: calc(2.375rem + 2px); }
 
 select.form-control:focus::-ms-value {
   color: #495057;
@@ -1415,7 +1415,7 @@ select.form-control:focus::-ms-value {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   margin-bottom: 0;
-  font-size: 1rem; }
+  font-size: 1.1rem; }
 
 .form-control-plaintext {
   padding-top: 0.5rem;
@@ -1697,7 +1697,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
           user-select: none;
   border: 1px solid transparent;
   padding: 0.5rem 0.75rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.25;
   border-radius: 0.25rem;
   -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
@@ -2153,7 +2153,7 @@ tbody.collapse.show {
   min-width: 10rem;
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #495057;
   text-align: left;
   list-style: none;
@@ -2386,7 +2386,7 @@ tbody.collapse.show {
 .input-group-addon {
   padding: 0.5rem 0.75rem;
   margin-bottom: 0;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: normal;
   line-height: 1.25;
   color: #495057;
@@ -2538,7 +2538,7 @@ tbody.collapse.show {
 .custom-select {
   display: inline-block;
   max-width: 100%;
-  height: calc(2.25rem + 2px);
+  height: calc(2.375rem + 2px);
   padding: 0.375rem 1.75rem 0.375rem 0.75rem;
   line-height: 1.25;
   color: #495057;
@@ -2573,13 +2573,13 @@ tbody.collapse.show {
   position: relative;
   display: inline-block;
   max-width: 100%;
-  height: calc(2.25rem + 2px);
+  height: calc(2.375rem + 2px);
   margin-bottom: 0; }
 
 .custom-file-input {
   min-width: 14rem;
   max-width: 100%;
-  height: calc(2.25rem + 2px);
+  height: calc(2.375rem + 2px);
   margin: 0;
   opacity: 0; }
   .custom-file-input:focus ~ .custom-file-control {
@@ -2592,7 +2592,7 @@ tbody.collapse.show {
   right: 0;
   left: 0;
   z-index: 5;
-  height: calc(2.25rem + 2px);
+  height: calc(2.375rem + 2px);
   padding: 0.5rem 0.75rem;
   overflow: hidden;
   line-height: 1.25;
@@ -2614,7 +2614,7 @@ tbody.collapse.show {
     right: 0;
     z-index: 6;
     display: block;
-    height: calc(2.25rem + 2px);
+    height: calc(2.375rem + 2px);
     padding: 0.5rem 0.75rem;
     line-height: 1.25;
     color: #495057;
@@ -2722,8 +2722,8 @@ tbody.collapse.show {
 
 .navbar-brand {
   display: inline-block;
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
+  padding-top: 0.3875rem;
+  padding-bottom: 0.3875rem;
   margin-right: 15px;
   font-size: 1.25rem;
   line-height: inherit;
@@ -3140,8 +3140,8 @@ tbody.collapse.show {
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
-    margin-right: -30px;
-    margin-left: -30px; }
+    margin-right: -40px;
+    margin-left: -40px; }
     .card-deck .card {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -3153,8 +3153,8 @@ tbody.collapse.show {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      margin-right: 30px;
-      margin-left: 30px; } }
+      margin-right: 40px;
+      margin-left: 40px; } }
 
 @media (min-width: 576px) {
   .card-group {
@@ -3754,7 +3754,7 @@ button.list-group-item-dark {
 
 .close {
   float: right;
-  font-size: 1.5rem;
+  font-size: 1.65rem;
   font-weight: bold;
   line-height: 1;
   color: #000;
@@ -4087,7 +4087,7 @@ button.close {
 .popover-header {
   padding: 8px 14px;
   margin-bottom: 0;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #3C3B54;
   background-color: #f7f7f7;
   border-bottom: 1px solid #ebebeb;
@@ -6497,7 +6497,7 @@ a.text-dark:focus, a.text-dark:hover {
   line-height: 1.3; }
 
 .text-base {
-  font-size: 1rem; }
+  font-size: 1.1rem; }
 
 .text-md {
   font-size: 22px; }
@@ -6537,10 +6537,10 @@ a.text-dark:focus, a.text-dark:hover {
   margin-right: 15px;
   font-weight: 600;
   letter-spacing: 0.5px;
-  font-size: 16px;
-  color: #3C3B54; }
+  font-size: 17px;
+  color: #007bff; }
   .nav-link.active {
-    border-color: #007bff; }
+    border-color: #3C3B54; }
   @media (max-width: 575px) {
     .nav-link {
       display: block; } }
@@ -6595,13 +6595,9 @@ a.text-dark:focus, a.text-dark:hover {
     -webkit-transform: translateY(-3px) rotate(45deg);
             transform: translateY(-3px) rotate(45deg); }
 
-@media (min-width: 992px) {
-  .logo {
-    margin-bottom: 15px; } }
-
-@media (min-width: 1200px) {
-  .logo {
-    margin-bottom: 0px; } }
+.logo {
+  position: relative;
+  top: -2px; }
 
 .section {
   padding-top: 50px;
@@ -6700,8 +6696,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  position: relative;
-  line-height: 1.4; }
+  position: relative; }
 
 .intro {
   height: 100vh;
