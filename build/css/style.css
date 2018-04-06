@@ -6662,6 +6662,9 @@ a.text-dark:focus, a.text-dark:hover {
 .border-left {
   border-left: 1px solid #eee; }
 
+.border-alt {
+  border-color: #dfe6ec; }
+
 .flex-auto {
   -webkit-box-flex: 1;
       -ms-flex: auto;
@@ -6699,10 +6702,26 @@ body {
   position: relative; }
 
 .intro {
-  height: 100vh;
+  height: calc(100vh - 100px);
   background-image: url("../images/bg.jpg");
   background-size: cover;
-  background-position: center top; }
+  background-position: center top;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   .intro h2 {
     text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3); }
 
