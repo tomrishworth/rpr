@@ -6623,6 +6623,16 @@ a.text-dark:focus, a.text-dark:hover {
   color: #fff;
   background-size: cover; }
 
+.section-services {
+  background-image: url(../images/services-bg3.jpg);
+  background-repeat: no-repeat;
+  background-color: #000;
+  background-position: top center;
+  padding-top: 600px;
+  color: #fff; }
+  .section-services p {
+    color: rgba(255, 255, 255, 0.6); }
+
 .container-xs {
   max-width: 450px; }
 
@@ -6799,8 +6809,5 @@ body {
   .down-arrow img {
     position: relative;
     top: 3px; }
-
-#services {
-  background-image: url(../images/services-bg.jpg); }
 
 /*# sourceMappingURL=style.css.map */

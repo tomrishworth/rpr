@@ -25,3 +25,17 @@
   color: #fff;
   background-size: cover;
 }
+
+.section-services {
+  background-image: url(../images/services-bg3.jpg);
+  background-repeat: no-repeat;
+  background-color: #000;
+  // background-size: ;
+  background-position: top center;
+  padding-top: 600px;
+  // background-size: cover;
+  color: #fff;
+  p {
+    color: rgba(255,255,255,0.6);
+  }
+}
