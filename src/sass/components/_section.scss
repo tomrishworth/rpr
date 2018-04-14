@@ -25,3 +25,16 @@
   color: #fff;
   background-size: cover;
 }
+
+.section-services {
+  background-image: url(../images/services-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top center;
+  padding-top: 200px;
+  color: #fff;
+  p {
+    color: rgba(255,255,255,0.8);
+  }
+}
