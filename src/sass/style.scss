@@ -21,7 +21,7 @@ body {
 
 .intro {
   height: calc(100vh - 100px);
-  // height: 100vh;
+  min-height: 700px;
   background-image: url("../images/bg.jpg");
   background-size: cover;
   background-position: center top;
@@ -35,24 +35,11 @@ body {
   }
 }
 
-.intro2 {
-  // height: calc(100vh - 100px);
-  height: 100vh;
-  background-image: url("../images/hk-bg.jpg");
-  background-position: center top;
-}
-
 .intro-content {
   height: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.portrait {
-  position: absolute;
-  bottom: 0;
-  right: -150px;
 }
 
 .slant-top {
@@ -73,6 +60,24 @@ body {
   }
 }
 
+.slant-bottom {
+  position: relative;
+  z-index: 1;
+  &::after {
+    content: '';
+    background: inherit;
+    display: block;
+    position: absolute;
+    height: 80px;
+    left: 0;
+    right: 0;
+    bottom: -80px;
+    transform: skewY(-1.5deg);
+    transform-origin: 0 0;
+    z-index: -1;
+  }
+}
+
 .down-arrow {
   background: #fff;
   border-radius: 50%;
@@ -83,7 +88,6 @@ body {
   justify-content: center;
   align-items: center;
   border: 1px solid #eee;
-  // box-shadow: 0 3px 18px 2px rgba(0,0,0,0.2);
   transition: transform 300ms ease;
   &:hover {
     transform: scale(1.1);
