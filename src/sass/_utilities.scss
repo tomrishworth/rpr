@@ -32,6 +32,10 @@
   color: $text-dark;
 }
 
+.text-body {
+  color: $body-color;
+}
+
 .text-grey {
   color: $gray-light;
 }
@@ -60,6 +64,10 @@
 
 .border-left {
   border-left: 1px solid $border-light;
+}
+
+.border-alt {
+  border-color: #dfe6ec;
 }
 
 .flex-auto {
