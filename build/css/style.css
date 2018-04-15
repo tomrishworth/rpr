@@ -6517,7 +6517,7 @@ a.text-dark:focus, a.text-dark:hover {
   padding: 0;
   position: absolute;
   z-index: 100; }
-  @media (max-width: 767px) {
+  @media (max-width: 991px) {
     .header {
       padding: 15px; } }
 
