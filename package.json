@@ -18,7 +18,7 @@
     "gulp-sourcemaps": "*"
   },
   "dependencies": {
-    "bootstrap": "4.0.0-beta",
+    "bootstrap": "^4.1.3",
     "gulp-uglify": "^3.0.0",
     "jquery": "^3.2.1",
     "smooth-scroll": "^12.1.5",
